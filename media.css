@@ -1,0 +1,272 @@
+@import url(style.css);
+
+/****** Tablettes ******/
+
+@media screen and (max-width: 1024px) {
+
+    .header {
+        padding: 20px 20px 10px 50px;
+    }
+
+    .logo-yum img {
+        width: 100px;
+    }
+
+    .nav-list {
+
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .cta-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .menu-title {
+        font-size: 1.5rem;
+    }
+}
+
+/****** Smartphones ******/
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 0.9rem;
+        overflow-x: hidden;
+    }
+
+    .nav-list a {
+        font-size: 1.5rem;
+    }
+
+    .yum-store h2 {
+        font-size: 1.9rem;
+        text-decoration: underline;
+        text-decoration-color: var(--accent-color);
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .header {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-yum img {
+        width: 70px;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        text-align: center;
+        margin-right: 18px;
+    }
+
+    .logo-yum-pres {
+        display: none;
+    }
+
+    .yum-store {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .yum-store p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .yum-store a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--accent-color);
+        text-align: center;
+    }
+
+    .cta-container {
+        display: none;
+    }
+
+    .face-pic {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .face-pic h2 {
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .face-pic-container {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 0;
+        gap: 0;
+        overflow-y: hidden;
+    }
+
+    .face-pic-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .face-pic-container {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .face {
+        flex: 0 0 100%;
+        width: 100vw;
+        min-width: 100vw;
+        scroll-snap-align: start;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .face img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    .face p {
+        margin: 5px 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .face p strong {
+        font-size: 1.1rem;
+        color: var(--accent-color);
+    }
+
+    .know p {
+        font-size: 0.9rem;
+    }
+
+    .aboutus {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .contact {
+        padding-top: 0;
+    }
+
+    .store-pic {
+        padding: 20px 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .store-pic h2 {
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .store-pic-container {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        padding: 0;
+        gap: 3px;
+    }
+
+    .store-pic-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .store-pic-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .store-pic-container img {
+        flex: 0 0 auto;
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Page menu responsive */
+
+    .head-menu {
+        padding: 60px;
+    }
+
+    .menu {
+        margin: 10px;
+
+    }
+
+    /* Page contact responsive */
+
+    .contact-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0px 0px 50px 0px;
+    }
+
+    .plan img {
+        width: 100%;
+        height: auto;
+    }
+
+    .plan {
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 20px
+    }
+
+    .nos-adresses {
+        padding-left: 5px;
+        font-size: 1.4rem;
+    }
+
+    .adresses {
+        flex-direction: row;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .store-one,
+    .store-two,
+    .store-three {
+        font-size: 0.75rem;
+        padding: 15px 0;
+        position: relative;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reseaux {
+        padding: 0;
+    }
+}

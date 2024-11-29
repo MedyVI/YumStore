@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-bg: #f8f9fa;
+    --color-grey: #e0e0e0;
+    --color-text: #333333;
+    --accent-color: #d2483d;
+    --font-title: 'Bebas Neue', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--color-grey);
+    margin: 0 auto;
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+.content-container {
+    width: 100%;
+}
+
+/*********** HEADER ***********/
+
+.redline {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 10px 70px;
+}
+
+.logo-yum img {
+    width: 115px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-title);
+    font-weight: normal;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* En dessous, effet interessant à conserver */
+
+/* .nav-list a::after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #d2483d; 
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; 
+}
+
+.nav-list a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+} */
+
+/*********** CONTENT ***********/
+
+.content-container {
+    background-color: var(--color-grey);
+    width: 100%;
+    max-width: 1600px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.yum-store {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.yum-store h2 {
+    margin-bottom: 0;
+}
+
+.yum-store .pres {
+    flex: 1;
+}
+
+.logo-yum-pres {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-80px);
+}
+
+.yum-store img {
+    width: 200px;
+}
+
+.face-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: var(--font-title);
+    margin-bottom: 30px;
+}
+
+.communs {
+    color: var(--accent-color);
+}
+
+.face-pic-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 80px;
+}
+
+.face {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.face img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+/* CTA centale */
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: var(--accent-color);
+    font-family: var(--font-body);
+    color: var(--color-bg);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-body);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    font-family: var(--font-title);
+}
+
+.cta-button:hover {
+    background-color:rgb(42, 40, 40);
+    color: var(--color-bg);
+}
+/* About us */
+
+.aboutus,
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.know {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.know p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.store-pic {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.store-pic-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.store-pic-container img {
+    width: 24.5%;
+    height: auto;
+    max-width: 100%;
+    /* margin-bottom: 20px; */
+
+}
+
+/* Page de menu */
+
+.head-menu {
+    padding: 50px 0px 30px 178px;
+}
+
+.menu-title {
+    font-size: 1.5em;
+    font-family: var(--font-title);
+    margin-bottom: 8px;
+}
+
+.menu img {
+    width: 100px;
+    height: auto;
+}
+
+.menu h3 { 
+    font-size: 1.6rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg);
+    margin: 0 180px 50px 180px;
+    gap: 30px;
+    padding: 80px 0;
+}
+
+/* Page des contacts */
+
+.nos-adresses {
+    font-size: 2.5rem;
+}
+
+.adresses {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    padding: 50px 0px 0px 90px;;
+    line-height: 20px;
+}
+
+.store-one,
+.store-two,
+.store-three {
+    font-size: 1.25rem;
+    padding: 15px 0;
+    position: relative;
+}
+
+.store-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: -10px;
+    width: 3px; 
+    background-color: var(--accent-color);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px 50px 0px;
+}
+
+.plan {
+     
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    height: 540px;
+}
+
+.plan img {
+    width: auto;
+    height: 100%; 
+    border-radius: 8px;
+}
+
+/*********** FOOTER ***********/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+    background-color: black;
+    color: var(--color-bg);
+}
+
+.reseaux {
+    display: flex;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.reseaux img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
