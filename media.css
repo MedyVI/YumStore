@@ -119,17 +119,6 @@
         overflow-y: hidden;
     }
 
-    .face-pic-container::-webkit-scrollbar {
-        display: none;
-    }
-
-    .face-pic-container {
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
-    }
-
     .face {
         flex: 0 0 100%;
         width: 100vw;
@@ -231,8 +220,7 @@
     }
 
     .plan img {
-        width: 100%;
-        height: auto;
+        display: none;
     }
 
     .plan {
@@ -242,14 +230,23 @@
     }
 
     .nos-adresses {
-        padding-left: 5px;
         font-size: 1.4rem;
+        margin-bottom: 5px;
+        text-decoration: underline;
+        text-decoration-color: var(--accent-color);
     }
 
     .adresses {
-        flex-direction: row;
+        margin-top: -20px;
+        align-items: center;
         gap: 15px;
-        padding: 0;
+        line-height: 1.5;
+        padding: 10px 0px 0px 20px
+    }
+
+    .store-name {
+        text-decoration: underline;
+        text-decoration-color: var(--accent-color);
     }
 
     .store-one,
@@ -258,6 +255,10 @@
         font-size: 0.75rem;
         padding: 15px 0;
         position: relative;
+    }
+
+    .store-one::before {
+        display: none;
     }
 
     .footer {

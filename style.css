@@ -267,8 +267,6 @@ h2 {
     width: 24.5%;
     height: auto;
     max-width: 100%;
-    /* margin-bottom: 20px; */
-
 }
 
 /* Page de menu */
@@ -358,6 +356,7 @@ h2 {
 }
 
 /*********** FOOTER ***********/
+
 
 .footer {
     display: flex;
